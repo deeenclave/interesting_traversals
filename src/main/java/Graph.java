@@ -11,9 +11,14 @@ public class Graph {
         return adj;
     }
 
+
     public Graph(int n){
         this.n = n;
         adj = new LinkedList[n];
+        // initialize each member linked list
+        for (int i= 0;i<n;i++){
+            adj[i] = new LinkedList<>();
+        }
     }
 
     // Add an edge to the graph
