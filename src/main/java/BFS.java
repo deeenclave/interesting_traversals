@@ -1,3 +1,7 @@
+import javafx.util.Pair;
+
+import java.util.List;
+
 public interface BFS {
 
     /**
@@ -6,6 +10,6 @@ public interface BFS {
      * @param start
      * @return
      */
-    String bfs(Graph g,int start);
+    List<Pair<Integer,Integer>> bfs(Graph g, int start);
 
 }
